@@ -1,0 +1,561 @@
+/* -----------------------
+          General
+----------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+}
+
+.visual-container {
+  width: 100%;
+}
+
+.image-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+.visual-container img,
+.visual-container video,
+.image-container img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.information-container {
+  display: flex;
+}
+
+.primary-content { /* main content for the individual sections*/
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.primary-content p {
+  opacity: 0.7;
+}
+
+.secondary-content { /* seconday content that appears on the side of the main content*/
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.info {
+  display: flex;
+}
+
+.details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.details h3 {
+  font-size: 1.5rem !important;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.details p {
+  font-size: 1rem;
+  opacity: 0.5;
+  font-weight: 500;
+  padding: .5rem 0;
+}
+
+.guest-lecture,
+.fisma {
+  background-color: rgba(0, 0, 0, .15);
+}
+
+
+
+/* -----------------------
+        Navigation
+----------------------- */
+
+.mobile-nav-container {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.navigation {
+  padding-right: 1.5rem;
+}
+
+.colmar-text {
+  font-weight: bold;
+}
+
+.academy-text {
+  opacity: 0.6;
+  padding-left: .1rem;
+}
+
+.colmar-text,
+.academy-text {
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 .5rem;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Transitions */
+
+nav ul li a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, .3);
+  transition: border-bottom 200ms ease-in 50ms;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .mobile-nav-container {
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo,
+  .navigation {
+    display: none;
+  }
+
+}
+
+
+/* -----------------------
+          Banner
+----------------------- */
+
+.learn-something {
+  background-color: rgba(0, 0, 0, .15);
+  display: flex;
+  width: 100%;
+}
+
+.banner-image {
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  padding: 2rem 1.5rem;
+  width: 39%; /* Giving this a 39% width provided a more consistent size to the picture below */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.banner-text h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.start {
+  display: block;
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  padding: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 2px solid grey;
+}
+
+.start:hover {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: rgba(0, 0, 0, .69);
+  transition: background-color 150ms ease-out 100ms,
+              color 150ms ease-in 100ms;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .learn-something {
+    display: block;
+    padding-bottom: 2rem;
+  }
+
+  .banner-image {
+    padding: 0;
+    width: 100%;
+  }
+
+  .banner-text {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-text h1 {
+    margin: 2rem 0;
+  }
+
+  .banner-text h1,
+  .banner-text h3 {
+    padding: 0 1rem;
+  }
+
+}
+
+
+/* -----------------------
+      Keep Practicing
+----------------------- */
+
+/* Primary Content */
+
+.mobile-image {
+  display: none;
+}
+
+.keep-practicing h1 {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.keep-practicing .quote {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.credit {
+  margin: 2rem 0;
+}
+
+/* Seconday Content */
+
+.details a {
+  text-decoration: none;
+  color: hsl(240, 100%, 75%);
+}
+
+
+/* Transitions */
+
+.details a:hover {
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, .2);
+  position: relative;
+  bottom: 1px;
+  transition: text-shadow 100ms linear;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .keep-practicing {
+    display: none;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .secondary-content {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  .info {
+    display: block;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    margin-bottom: 4rem;
+    display: block;
+  }
+
+  .details h3,
+  .details p,
+  .details a {
+    padding: 0 1rem;
+  }
+
+  .guest-lecture {
+    background-color: white;
+  }
+}
+
+
+/* -----------------------
+      Start Learning
+----------------------- */
+
+.start-learning {
+  width: 100%;
+  background-color: rgba(0, 0, 0, .08);
+  padding: 2rem 0;
+}
+
+.mobile-subject {
+  display: none;
+}
+
+.start-learning h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.subject-container {
+  margin: 0 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subject-image {
+  width: 100%;
+  height: auto;
+}
+
+.subject-image img {
+  width: 100%;
+}
+
+.subject {
+  width: 30%;
+  background-color: white;
+  margin: 1rem;
+}
+
+.subject-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.subject-details h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.courses {
+  padding: .5rem 0;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.course-description {
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1103px) { /* Fixed some wrapping issues of the subject boxes*/
+
+  .subject-container {
+    margin: 0;
+  }
+
+  .subject {
+    width: 28%;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .subject {
+    display: none;
+  }
+
+  .mobile-subject {
+    display: block;
+    margin-bottom: .5rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: rgba(0, 0, 0, .15);
+  }
+
+  .mobile-subject h4 {
+    font-size: 1.5rem;
+  }
+
+  .start-learning {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+  }
+
+  .subject-container {
+    display: block;
+    margin: 0 1rem;
+  }
+}
+
+/* -----------------------
+      Thesis Exhibit
+----------------------- */
+
+.mobile-video {
+  display: none;
+}
+
+.thesis {
+  padding: 2rem;
+}
+
+.thesis h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.primary-content h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0 .5rem 0;
+}
+
+.exhibit-text {
+  position: relative;
+  top: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .exhibit-content,
+  .exhibit-text {
+    display: none;
+  }
+
+  .thesis {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .thesis h2 {
+    padding-bottom: 1rem;
+  }
+
+  .mobile-video {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* -----------------------
+          Footer
+----------------------- */
+
+footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid rgba(0,0,0,.15);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 .5rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer ul li a:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, .3);
+  transition: border-bottom 200ms ease-in 50ms;
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    border-top: none;
+
+  }
+
+  footer ul {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
