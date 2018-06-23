@@ -247,6 +247,11 @@ nav ul li a:hover {
     padding: 0 1rem;
   }
 
+  .start {
+    width: 80%;
+    margin: 0 auto;
+  }
+
 }
 
 
@@ -411,7 +416,7 @@ nav ul li a:hover {
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 1103px) { /* Fixed some wrapping issues of the subject boxes*/
+@media only screen and (max-width: 1103px) { /* Fixed some wrapping issues of the subject boxes */
 
   .subject-container {
     margin: 0;
